@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selektori html elementa</title>
+    <style>
+      body {
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+      }
+      [title] {
+        text-decoration: underline solid red;
+      }
+      [title="prvi odlomak"] {
+        font-weight: bold;
+      }
+      [title*="odlomak"] {
+        color: darkgreen;
+      }
+
+      [title~="odlomak"] {
+        text-transform: uppercase;
+      }
+
+      [title^="odlomak"] {
+        font-style: italic;
+      }
+
+      [title|="odlomak"] {
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      [title$="odlomak"] {
+        color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 title="glavni naslov stranice">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    <p title="prvi odlomak">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet architecto accusamus quasi
+      libero eius necessitatibus molestias ut ipsam temporibus labore.
+    </p>
+    <p title="odlomak-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod debitis cupiditate sequi
+      veritatis inventore, vel nihil et fugiat nemo temporibus. Amet harum placeat eius omnis dolore
+      quas?
+    </p>
+    <p title="odlomak 3">
+      Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Cumque nemo beatae
+      impedit quia ab velit?
+    </p>
+    <p title="odlomakbla">
+      Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Obcaecati alias
+      sapiente distinctio quasi soluta ad.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet <span title="nesto">tempor tempor</span>consectetur adipisicing
+      elit. Est excepturi accusamus cupiditate velit quaerat.
+    </p>
+  </body>
+</html>
