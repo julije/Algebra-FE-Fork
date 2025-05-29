@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasljedzivanje CSS svojstava 2</title>
+    <style>
+      html {
+        color: #333;
+      }
+
+      :root {
+        color: orange;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        text-align: center;
+      }
+      p {
+        color: green;
+      }
+
+      strong {
+        text-decoration: underline wavy red;
+        font-weight: normal;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+      }
+      .myclass {
+        padding: 50px;
+      }
+      #myid {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h4>Lorem, ipsum dolor.</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eveniet quaerat quisquam
+      exercitationem, nesciunt sint eius libero corrupti distinctio saepe tempore obcaecati earum
+      recusandae quas quis cum placeat doloremque deleniti!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem vel non harum dicta dolore
+      veniam inventore unde doloremque odit? Voluptatem non fuga quo corrupti fugiat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, rerum officia ipsum quaerat
+      delectus <span>Lorem ipsum dolor sit amet.</span>minus maxime saepe obcaecati aperiam expedita
+      <strong>eaque doloribus id illo excepturi</strong> quam quisquam odit corporis libero,
+      <em>Lorem ipsum dolor sit amet.</em>quos minima iste. Tempora, ut!
+    </p>
+    <div id="myid" class="myclass myclass2" style="background-color: blue">moj div</div>
+  </body>
+</html>
