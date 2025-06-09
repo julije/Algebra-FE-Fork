@@ -1,0 +1,45 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  background-color: #f93;
+}
+.width1 {
+  width: 50%;
+}
+.width2 {
+  width: 500px;
+}
+
+.width3 {
+  width: 25em;
+}
+
+.height1 {
+  height: 50%;
+}
+
+.height2 {
+  height: 150px;
+}
+
+.blue {
+  background-color: blue;
+}
+.height3 {
+  height: 80px;
+}
+
+.border {
+  border: 2px solid green;
+}
+.border {
+  border: 2px dashed green;
+}
