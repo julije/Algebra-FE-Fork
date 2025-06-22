@@ -1,0 +1,10 @@
+:root {
+  --primary-color: blue;
+}
+
+div {
+  color: var(--primary-color);
+}
+
+div:nth-child(an + b) {
+}
