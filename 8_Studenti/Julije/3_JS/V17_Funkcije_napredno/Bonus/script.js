@@ -1,0 +1,48 @@
+//! 1.
+function vanjska() {
+  var poruka = "Bok";
+
+  function unutarnja() {
+    console.log(poruka);
+  }
+}
+
+/* console.log(poruka); */
+vanjska();
+
+//! 2.
+
+var counter = (function () {
+  var privateCounter = 0;
+
+  function increment() {
+    privateCounter = privateCounter + 1;
+  }
+  return {
+    incr: increment,
+    value: function () {
+      return privateCounter;
+    },
+  };
+})();
+counter.incr();
+counter.incr();
+console.log(counter.value());
+//console.log(counter.privateCounter);
+
+
+var vanjskaFn =(Function(){
+    var lokalna = 10;
+    return {
+        get: function(){
+            returnlokalna;
+        },
+        set: function(novaVrijednost) {
+            lokalna = novaVrijednost;
+        }
+    }
+})();
+
+console.log(vanjskaFn.get());
+vanjskaFn.set(35);
+console.log(vanjskaFn.get());
