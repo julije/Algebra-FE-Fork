@@ -9,7 +9,7 @@ function main() {
   document.addEventListener("click", (event) => {
     const asideElDisplay = window.getComputedStyle(asideEl).display;
 
-    if (event.target.closest("div") && asideElDisplay === "block") toggleNav(hamburgeElm, asideEl);
+    if (!event.target.closest("div") && asideElDisplay === "block") toggleNav(hamburgeElm, asideEl);
   });
 
   hamburgerEl.addEventListener("click", () => toggleNav(hamburgeEl, asideEl));
