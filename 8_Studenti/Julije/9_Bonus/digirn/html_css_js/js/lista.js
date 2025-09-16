@@ -109,7 +109,7 @@ function main() {
     if (tmpNalozi.length !== 0) {
       const answer = confirm("Spremi naloge u bazu");
       if (answer) {
-        zapisiFirebase();
+        zapisiFirebase(tmpNalozi);
       }
     } else {
       alert("Nema naloga za spremanje");
